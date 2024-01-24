@@ -14,17 +14,17 @@
     </head>
     <body>
     <center>
-        <h1>List of products</h1>
-        <table>
-            <thead>
+        <table border="1px" width="40%">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+            </tr>
+            <p:forEach items="${requestScope.list}" var="p">
+                <p:set var="id" value="${p.id}"/>
                 <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
+                    <td>${id}</td>
+                    <td>${p.name}</td>
+                </p:forEach>
         </table>
         <center/>
     </body>

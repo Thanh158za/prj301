@@ -35,6 +35,7 @@ public class ListProductsServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         ProductsDAO objP = new ProductsDAO();
         List<Products> list = objP.getAll();
+        request.setAttribute("list", list);
         request.getRequestDispatcher("products.jsp").forward(request, response);
     } 
 

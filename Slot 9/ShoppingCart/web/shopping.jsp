@@ -17,8 +17,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mua hàng qua mạng</title>
+        <link rel="stylesheet" href="css/shopping.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     </head>
     <body>
+        <div>
         <form action="xuly.jsp" method="post">
             Chọn sản phẩm:<select name="ms">
                 <%
@@ -62,5 +65,7 @@
             <h2 align="right">Tổng tiền:<%=cart.Tongtien() %></h2>
             <%} %>
         </form>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
